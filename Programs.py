@@ -35,3 +35,4 @@ class Programs:
                                          constants.USER_NODE_FILES_GENERATED_SUBDIRECTORY))
             docker_client.images.build(path=constants.TEMP_GENERATED_FILES_DIRECTORY, tag=program_name, rm=True)
             shutil.rmtree(constants.TEMP_GENERATED_FILES_DIRECTORY)
+        os.remove(constants.NID_MAPPINGS_FILE_PATH)
