@@ -80,7 +80,7 @@ def main(args):
     programs = Programs(yaml.load(open('user_configuration/diorama_programs.yml', 'r')))
 
     if args.clean:
-        clean([node['nid'] for node in network_topology.nids],
+        clean([node['nid'] for node in network_topology.proto_nodes],
               [program['program_name'] for program in programs.programs_list],
               args.force)
     else:

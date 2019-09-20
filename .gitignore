@@ -157,3 +157,5 @@ user_configuration/*
 user_node_files/*
 !user_node_files/.gitkeep
 !user_node_files/README.md
+
+*.DS_Store
